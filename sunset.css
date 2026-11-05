@@ -28,13 +28,15 @@
     position: absolute;
     inset: 0;
     padding: 10px;
-    border-radius: 50px 0px 50x 0px;
+    border-radius: 50px 0px 50px 0px;
     background: linear-gradient(
         135deg,
         #F4BE38,
         #EDDA5E,
-        #FF5A22
+        #FF5A22,
+        #F4BE38
     );
+    background-attachment: fixed;
     -webkit-mask:
         linear-gradient(#fff 0 0) content-box,
         linear-gradient(#fff 0 0);
