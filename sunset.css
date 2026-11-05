@@ -55,8 +55,8 @@
 .template-title {
     position: absolute;
     z-index: 3;
-    left: 80px;
-    top: 30px;
+    left: 100px;
+    top: 50px;
     font-size: 60px;
     color: white;
     font-family: garamond;
