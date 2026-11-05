@@ -57,13 +57,13 @@
 .sunset-title {
     position: absolute;
     z-index: 3;
-    left: 150px;
+    left: 145px;
     top: 30px;
-    font-size: 80px;
+    font-size: 90px;
     background: linear-gradient( 
         to right, 
-        #FB6C00, 
-        #E73F1E, 
+        #FFDD9C, 
+        #F9B637, 
         #FB6C00
     ); 
     -webkit-background-clip: text; 
