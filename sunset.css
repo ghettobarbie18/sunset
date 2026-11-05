@@ -87,7 +87,7 @@
     box-sizing: border-box;
     overflow-y: auto;
     color: black;
-    font-size: 12px;
+    font-size: 14px;
     text-align: justify;
     font-family: georgia;
     border: 2px solid #2A1A0E;
@@ -117,5 +117,5 @@
   font-weight: 400;
   font-style: bold;
   color: #E73F1E;
-  font-size: 13px;
+  font-size: 14px;
 }
