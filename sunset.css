@@ -60,7 +60,9 @@
     font-size: 60px;
     color: white;
     text-shadow: 2px 8px 2px #2A1A0E;
-    font-family: garamond;
+    font-family: "Miss Fajardose", cursive;
+    font-weight: 400;
+    font-style: normal;
     text-align: center;
 }
 
@@ -97,4 +99,11 @@
 .sunset-textbox::-webkit-scrollbar-thumb {
     background: #F4BE38;
     border-radius: 20px;
+}
+
+.griffy-text {
+  font-family: "Griffy", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  color: #F4BE38;
 }
