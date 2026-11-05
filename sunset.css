@@ -89,7 +89,16 @@
     color: black;
     text-align: justify;
     font-family: georgia;
-    border: 4px solid #2A1A0E;
+    background: linear-gradient(
+        135deg,
+        #2A1A0E,
+        #FEF3E2,
+        #2A1A0E
+    );
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
     border-radius: 50px 0px 0px 50px;
     background: linear-gradient(
     to bottom,
