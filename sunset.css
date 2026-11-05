@@ -79,9 +79,9 @@
 .sunset-textbox {
     position: absolute;
     z-index: 3;
-    width: 400px;
+    width: 420px;
     height: 360px;
-    left: 360px;
+    left: 370px;
     top: 40px;
     padding: 20px 10px 20px 20px;
     box-sizing: border-box;
