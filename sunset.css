@@ -67,7 +67,7 @@
 
 /* TITLE */
 .sunset-template .sunset-title {
-    position: relative !important;
+    position: absolute !important;
     display: block !important;
     width: 450px !important;
     height: 110px !important;
@@ -94,7 +94,7 @@
 
 /* TEXTBOX */
 .sunset-template .sunset-textbox {
-    position: relative !important;
+    position: absolute !important;
     display: block !important;
 
     width: 450px !important;
