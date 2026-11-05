@@ -52,7 +52,8 @@
 /* CONTENT ABOVE BACKGROUND */
 .sunset-template .sunset-content {
     position: absolute !important;
-    inset: 0 !important;
+    top: 0 !important;
+    left: 0 !important;
     width: 100% !important;
     height: 100% !important;
     z-index: 2 !important;
@@ -85,29 +86,45 @@
 }
 
 /* TEXTBOX */
+/* TEXTBOX */
 .sunset-template .sunset-textbox {
     position: absolute !important;
-    z-index: 3 !important;
+    display: block !important;
+
+    top: 145px !important;
+    bottom: auto !important;
+    left: 330px !important;
+    right: auto !important;
+
     width: 450px !important;
     height: 340px !important;
-    left: 330px !important;
-    top: 145px !important;
+
+    margin: 0 !important;
+    transform: none !important;
+    float: none !important;
+
     padding: 20px !important;
     box-sizing: border-box !important;
+
+    overflow-x: hidden !important;
     overflow-y: auto !important;
+
     color: black !important;
     font-size: 14px !important;
     line-height: normal !important;
     text-align: justify !important;
     font-family: Georgia, serif !important;
+
     border: 2px solid #2A1A0E !important;
-    border-radius: 50px 0 0 50px;
+    border-radius: 50px 0 0 50px !important;
+
     background: linear-gradient(
         to bottom,
         #FEF3E2,
         #F4AE52
     ) !important;
-    pointer-events: auto;
+
+    pointer-events: auto !important;
 }
 
 /* SCROLLBAR */
