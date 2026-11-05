@@ -18,6 +18,7 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    border-radius: 50px 0px 50px 0px;
     z-index: 0;
     pointer-events: none;
 }
@@ -27,12 +28,12 @@
     position: absolute;
     inset: 0;
     padding: 2px;
-    border-radius: 25px;
+    border-radius: 50px 0px 50x 0px;
     background: linear-gradient(
         135deg,
-        #8b0000,
-        #d4af37,
-        #8b0000
+        #F4BE38,
+        #EDDA5E,
+        #FF5A22
     );
     -webkit-mask:
         linear-gradient(#fff 0 0) content-box,
