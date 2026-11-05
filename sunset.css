@@ -56,7 +56,7 @@
     position: absolute;
     z-index: 3;
     left: 80px;
-    top: 0px;
+    top: 10px;
     font-size: 60px;
     color: white;
     text-align: center;
@@ -68,15 +68,15 @@
     z-index: 3;
     width: 350px;
     height: 400px;
-    left: 80px;
-    top: 0px;
+    right: 80px;
+    top: 20px;
     padding: 20px;
     box-sizing: border-box;
     overflow-y: auto;
     color: white;
     background: linear-gradient(
-    to right,
-    rgba(90,0,0,1),
-    rgba(90,0,0,0)
+    to bottom,
+    rgba(255, 140, 0, 1),
+    rgba(255, 140, 0, 0)
 );
 }
