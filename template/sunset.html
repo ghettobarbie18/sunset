@@ -9,37 +9,43 @@
 <title>Sunset Template</title>
 
 <style>
+
 /* MAIN TEMPLATE */
 .sunset-template {
-    position: relative;
-    width: 820px;
-    height: 550px;
-    margin: auto;
-    overflow: hidden;
+    position: relative !important;
+    display: block !important;
+    width: 820px !important;
+    height: 550px !important;
+    margin: 20px auto !important;
+    padding: 0 !important;
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+    isolation: isolate;
 }
 
 /* GIF BACKGROUND */
-.sunset-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url("https://raw.githubusercontent.com/ghettobarbie18/sunset/refs/heads/main/lolaf_by_chernotrop_dg0338o.gif");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 50px 0px 50px 0px;
-    z-index: 0;
+.sunset-template .sunset-image {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    background-image: url("https://raw.githubusercontent.com/ghettobarbie18/sunset/refs/heads/main/lolaf_by_chernotrop_dg0338o.gif") !important;
+    background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    border-radius: 50px 0 50px 0;
+    z-index: 0 !important;
     pointer-events: none;
 }
 
-.sunset-image::before {
+/* GRADIENT BORDER */
+.sunset-template .sunset-image::before {
     content: "";
     position: absolute;
     inset: 0;
     padding: 10px;
-    border-radius: 50px 0px 50px 0px;
+    border-radius: 50px 0 50px 0;
     background: linear-gradient(
         135deg,
         #F4BE38,
@@ -47,7 +53,6 @@
         #FF5A22,
         #F4BE38
     );
-    background-attachment: fixed;
     -webkit-mask:
         linear-gradient(#fff 0 0) content-box,
         linear-gradient(#fff 0 0);
@@ -56,79 +61,88 @@
     pointer-events: none;
 }
 
-/* CONTENT ABOVE GIF */
-.sunset-content {
-    position: relative;
-    z-index: 2;
-    width: 100%;
-    height: 100%;
+/* CONTENT ABOVE BACKGROUND */
+.sunset-template .sunset-content {
+    position: absolute !important;
+    inset: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    z-index: 2 !important;
+    pointer-events: none;
 }
 
 /* TITLE */
-.sunset-title {
-    position: relative;
-    z-index: 3;
-    font-size: 90px;
-    left: 145px;
-    top: 30px;
-    background: linear-gradient( 
-        to right, 
-        #FFDD9C, 
-        #F9B637, 
+.sunset-template .sunset-title {
+    position: absolute !important;
+    z-index: 4 !important;
+    left: 145px !important;
+    top: 30px !important;
+    width: 650px;
+    font-size: 90px !important;
+    line-height: 1.1 !important;
+    background: linear-gradient(
+        to right,
+        #FFDD9C,
+        #F9B637,
         #FB6C00
-    ); 
-    -webkit-background-clip: text; 
+    );
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-shadow: 2px 8px 2px #2A1A0E;
-    font-family: "Miss Fajardose", cursive;
-    font-weight: 400;
+    font-family: "Miss Fajardose", cursive !important;
+    font-weight: 400 !important;
     font-style: normal;
     text-align: center;
+    text-transform: none !important;
+    pointer-events: none;
 }
 
 /* TEXTBOX */
-.sunset-textbox {
-    position: relative;
-    z-index: 3;
-    width: 420px;
-    height: 360px;
-    left: 350px;
-    top: 40px;
-    padding: 20px 10px 20px 20px;
-    box-sizing: border-box;
-    overflow-y: auto;
-    color: black;
-    font-size: 14px;
-    text-align: justify;
-    font-family: georgia;
-    border: 2px solid #2A1A0E;
-    border-radius: 50px 0px 0px 50px;
+.sunset-template .sunset-textbox {
+    position: absolute !important;
+    z-index: 3 !important;
+    width: 420px !important;
+    height: 360px !important;
+    left: 350px !important;
+    top: 40px !important;
+    padding: 20px 10px 20px 20px !important;
+    box-sizing: border-box !important;
+    overflow-y: auto !important;
+    color: black !important;
+    font-size: 14px !important;
+    line-height: normal !important;
+    text-align: justify !important;
+    font-family: Georgia, serif !important;
+    border: 2px solid #2A1A0E !important;
+    border-radius: 50px 0 0 50px;
     background: linear-gradient(
-    to bottom,
-    #FEF3E2,
-    #F4AE52
-);
+        to bottom,
+        #FEF3E2,
+        #F4AE52
+    ) !important;
+    pointer-events: auto;
 }
 
-.sunset-textbox::-webkit-scrollbar {
+/* SCROLLBAR */
+.sunset-template .sunset-textbox::-webkit-scrollbar {
     width: 6px;
 }
 
-.sunset-textbox::-webkit-scrollbar-track {
+.sunset-template .sunset-textbox::-webkit-scrollbar-track {
     background: transparent;
 }
 
-.sunset-textbox::-webkit-scrollbar-thumb {
+.sunset-template .sunset-textbox::-webkit-scrollbar-thumb {
     background: #F4BE38;
     border-radius: 20px;
 }
 
-.griffy-text {
-  font-family: "Griffy", system-ui;
-  font-weight: 400;
-  font-style: bold;
-  color: #E73F1E;
-  font-size: 14px;
+/* GRIFFY TEXT */
+.sunset-template .griffy-text {
+    font-family: "Griffy", system-ui !important;
+    font-weight: 400;
+    color: #E73F1E !important;
+    font-size: 14px !important;
 }
 </style>
 </head>
@@ -136,14 +150,10 @@
 
 <body>
 <div class="sunset-template">
-
     <div class="sunset-image"></div>
 
     <div class="sunset-content">
-
-        <div class="sunset-title">
-            Magpie Destruction
-        </div>
+        <div class="sunset-title">Magpie Destruction</div>
 
         <div class="sunset-textbox">
             Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
@@ -157,9 +167,7 @@ Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapi
 Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
         <center><div class="griffy-text">"Magpie Speaks"</div></center>
         </div>
-
     </div>
-
 </div>
 </body>
 </html>
