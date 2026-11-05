@@ -72,10 +72,10 @@
 .sunset-textbox {
     position: absolute;
     z-index: 3;
-    width: 350px;
-    height: 400px;
+    width: 400px;
+    height: 360px;
     left: 350px;
-    top: 40px;
+    top: 30px;
     padding: 20px;
     box-sizing: border-box;
     overflow-y: auto;
