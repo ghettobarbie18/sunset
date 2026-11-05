@@ -70,14 +70,14 @@
     width: 350px;
     height: 400px;
     left: 350px;
-    top: 25px;
+    top: 40px;
     padding: 20px;
     box-sizing: border-box;
     overflow-y: auto;
     color: white;
     text-align: justify;
     font-family: georgia;
-    border-radius: 0px 50px 0px 50px;
+    border-radius: 50px 50px 0px 0px;
     background: linear-gradient(
     to bottom,
     rgba(255, 165, 80, 1),
