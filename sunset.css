@@ -55,7 +55,8 @@
 .template-title {
     position: absolute;
     z-index: 3;
-    margin: 60px auto;
+    left: 80px;
+    top: 0px;
     font-size: 60px;
     color: white;
     text-align: center;
@@ -67,14 +68,15 @@
     z-index: 3;
     width: 350px;
     height: 400px;
-    margin: 60px auto;
+    left: 80px;
+    top: 0px;
     padding: 20px;
     box-sizing: border-box;
     overflow-y: auto;
     color: white;
     background: linear-gradient(
     to right,
-    rgba(254, 243, 226)
-    rgba(244, 174, 82)
+    rgb(254, 243, 226)
+    rgb(244, 174, 82)
 );
 }
